@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="/snowFlakes/snow.min.css" rel="stylesheet">
+</head>
+<body>
+        <form>
+        <input type="radio" name="asd">
+        <input type="radio" name="asd" checked>
+        <input type="radio" name="asd">
+        </form>
+
+        <button id="clicable">Томушка нажми суда!!!</button>
+<script src="index.js"></script>
+<script src="/snowFlakes/Snow.js"></script>
+<script>
+    new Snow();
+</script>
+
+<button class="open-button" onclick="openForm()">Подпишитесь</button>
+<div class="form-popup" id="myForm">
+    <form action="#" class="form-container">
+        <h1>Подписаться</h1>
+        <label for="name"><b>Имя</b></label>
+        <input type="text" placeholder="Ваше имя" name="name" required minlength="2" maxlength="7">
+        <label for="email "><b>Е-мейл</b></label>
+        <input type="text" placeholder="Ваш е-мейл" name="email" required>
+        <button type="submit" class="btn">Отправить</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">&times</button>
+    </form>
+</div>
+
+<script>
+    function openForm() { document.getElementById("myForm").style.display = "block"; }
+    btn cancel.classList.add("hidden");
+
+</script>
+
+
+
+
+    //<div class="">
+        <h1 id="deb" class="header" title="asd">Ура, учим  JAVA SCRIPT</h1>
+        <p class="par"> И мне это нравится!!!!!!!</p>
+
+        <div class="rem">jhgfhjvj</div>
+    </div>
+
+    <div>
+         <p class="re">УУУххх</p>
+      <button class="setup" hidden>Проэктор</button>
+    </div>
+
+         <button class="BUT">
+        <div class="el el-1"><span>[0]</span></div>
+        <div class="el el-2"><span>[1]</span></div>
+        <div class="el el-3"><span>[2]</span></div>
+        <div class="el el-4"><span>[3]</span></div>
+        <div class="el el-5"><span>[4]</span></div>
+        <div class="el el-6"><span>[5]</span></div>
+
+    </div>
+    </button>
+
+    <script>
+        var Butoff = document.querySelector(".el el-2");
+        document.addEventListener('keydown' function(){
+            Butoff.classList.add('hidden');
+        })
+        
+    </script>
+
+    <div class="pool pool-2">
+        <template id="element-template">
+            <div class="el el-1">
+                <span><!--номер элемента--></span>
+            </div>
+
+        </template>
+
+    </div>
+
+    <div id="login">
+        <form class="form">
+           
+
+            
+        
+        <p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
+        <!-- <a href="#0" class="close-form">Close</a> -->
+    </div>
+
+    <div id="signup">
+        <form class="form">
+            <p class="fieldset">
+                <label class="image-replace username" minlength="2" maxlength="5" for="signup-username">Username</label>
+                <input class="full-width has-padding has-border" id="signup-username" type="text" minlength="3" maxlength="5" placeholder="Username">
+                <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+            </p>
+
+        
+
+
+    
+    
+<script>
+    var ProverRE = document.getElementById("signup-username");
+    
+    ProverRE.addEventListener("invalid", function(){
+        if (ProverRE.validity.tooShort) {
+            ProverRE.setCustomValidity("Братан это очень коротко.");
+        }
+    });
+
+
+
+
+
+
+//пробуем функцию
+    var calculateDist = function(time,speedFirst,speedSecond){ 
+
+//расстояние первого
+    var distFirst = speedFirst * time;
+// расстояние второго
+    var distSecond = speedSecond * time;
+
+// общая дистанция
+    var totalDist = distFirst + distSecond;
+     return totalDist;
+};
+    var firstDist = calculateDist(3,12,14);
+    var secondDist = calculateDist(4,17,14);
+    
+    var TheDist = calculateDist(4,17,14);
+    console.log("Расстояние между первыми поселками: "  +  firstDist);
+    console.log("Расстояние между вторыми поселками: " +  secondDist);
+    
+    var Bymagaz = function(egs){
+        if (egs){
+            return 10;
+        } else{
+            return 1;
+        }
+    } 
+    console.log(Bymagaz(false));
+
+    var str = "test";
+    console.log(str.length);
+
+    if (2*3 == 7){
+        console.log("Верно")
+    } else {
+        console.log("Неверно");
+    }
+
+
+
+    var washNextItems = function(itemsLeft){
+        itemsLeft--;
+        console.log("В раковине осталось " + itemsLeft + "предметов");
+
+        if (itemsLeft > 0){
+            washNextItems(itemsLeft);
+        }
+    } ;
+    washNextItems(10);   
+
+    var arr = [1, 2, 3, 4, 5];
+
+    arr.pop();
+    arr.push("5");
+
+
+    console.log(arr);
+
+    var printNames = function(names){
+        for (var i = 0; i < names.length; i++){
+            console.log("Элемент" + i + ":" + names[i]);
+        }
+        
+    }
+    printNames(["Геннадий", "Вечеслав","Василий", "Павел", "Максим"]);
+
+    console.log("---------------------------------");
+    printNames(["Пендальф", "Радагаст"]);
+
+    var firstWizard = "Павел"
+    var secondWizard = "Максим"
+    var connector =  " и ";
+    var wizardNames = [firstWizard + " и " + secondWizard, "Алатар" + connector + "Паландо"];
+       console.log(wizardNames);
+
+
+    var numbers = [1,3,3,7];
+        console.log(numbers);  
+        
+    var booleans = [true, typeof 1 ==="boolean"];
+        console.log(booleans);
+
+    var randomThings = [42, "здесь ваша рекламма", true];
+        console.log(randomThings);    
+
+    var firstN = "Пендальф";
+    var secondN = "Сарумян";
+    
+    var mas = [firstN,secondN];
+       console.log(mas);
+    var ___ = "замени меня";
+    
+    var age = "41";
+    var name = "Vladimir";
+    var soname = "Utkin";
+
+    var info = [age , name, soname];
+        console.log(info);
+
+    var WizardName = ["Пендальф","Сарумян","Алатар","Паландо"];
+        console.log("Исходный массив: "   + WizardName);    
+
+        console.log("Первое имя в массиве: " + WizardName[0]);
+        WizardName[0] = 'Баба-яга';
+        
+        console.log('Первое имя в массиве: ' + WizardName[0]);
+        console.log('Текущий массив: ' + WizardName);
+ 
+    var wiza = ["Баба - яга", "Кощей"];
+    
+        console.log(wiza);
+    console.log("Второй элемент массива: " + wiza[1]);    
+    console.log("Первый элемент массива: " + wiza[0]);
+    
+
+    wiza[2] = "кот баюн";
+    console.log("Третий элемент массива: " + wiza[2]);
+
+        console.log(wiza);
+
+    var wizaNew = [wiza[0], wiza[2], wiza[1]];
+        console.log(wizaNew);    
+
+    var WizardName = ["Пендальф","Сарумян","Алатар","Паландо"];
+
+    console.log("Всего имен в массиве: " + WizardName.length);
+    
+    var bag = [
+        ["посох" , "кулак"],
+        ["фаербол", "молния", "стрела"],
+        ["проклятье", "заклинание"]
+    ];
+    console.log(bag);
+
+
+    var lHand = bag[1];
+    console.log(lHand);
+
+    var items = lHand[1];  // молния на левую
+    console.log(items);
+
+    var rHand = bag[2];
+    console.log(rHand);
+
+    var items2 = rHand[1];  //заклинание на правую руку
+    console.log(items2);
+
+    console.log('У мага в левой руке: ' + items + "а в правой руке:  " + items2);
+    console.log("Всего предметов в сумке: " + bag.length);
+    
+   
+
+    var elementClass = document.querySelector("h1");
+    console.log(elementClass.className);
+
+    elementClass.classList.remove('rrrr');
+    console.log(elementClass.className);
+
+    elementClass.classList.add('toma');
+    console.log(elementClass.className);
+
+    var pools  = document.querySelectorAll('.pool');
+    var blocks = document.querySelectorAll('.el');
+
+    //pools[0].removeChild(blocks[0]);
+    //pools[1].appendChild(blocks[0]);
+  
+
+    
+
+    var foo = {a : 1};
+    var bar = foo;
+    foo.a++;
+
+    console.log(bar.a);
+
+    var description = document.querySelector('p-1');
+
+
+
+    var polls    = document.querySelectorAll('pool');
+    var template = document.querySelector('#element-template').content.querySelector('div');
+    
+    for (var i=0; i<6; i++) {
+        var element  = template.cloneNode(true);
+        element.children[0].textContent = i;
+        pools[1].appendChild(element);
+    } 
+
+    console.log(document.parentElement);
+
+    console.log(document.children, 1);
+    
+   // for(var i = 0; i < document.children.length; i++ ){
+    //  var child = document.children[i];
+   // }
+
+      /// console.log('Имя элемента '  + i +  ' : ' + child.tagName);
+     //  console.log('Этот элемент HTML: ' + (child.tagName.toLowerCase() === 'html'));
+
+       var html = document.children[0];
+
+    for(var i = 0; i < html.children.length ; i++);
+       var child = html.children[0];
+       console.log(child.tagName.toLowerCase());
+
+    var firstDiv = document.children[0];
+
+    console.log(firstDiv.tagName);
+       console.log(document.querySelectorAll('div'));
+        
+     var pageHeading = document.querySelector('h1');
+      console.log(pageHeading.className); 
+      pageHeading.className = 'myclass';
+      console.log(pageHeading.title);    
+      
+      var button = document.getElementById("clicable");
+        button.addEventListener('click', function(){
+        alert("Привет красотка Томушка!!!");
+      });
+
+     
+
+     //button.removeEventListener('click', buttonHandler);
+      
+      
+     
+
+      
+
+
+</script>
+
+    
+</body>
+</html>
